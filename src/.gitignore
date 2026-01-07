@@ -1,0 +1,57 @@
+# ===============================
+# OS & Editor
+# ===============================
+*.log
+.DS_Store
+Thumbs.db
+
+/.idea
+/.vscode
+/.fleet
+/.zed
+/.nova
+
+# ===============================
+# Environment files (WAJIB DIIGNORE)
+# ===============================
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+
+/auth.json
+
+# ===============================
+# Laravel
+# ===============================
+/vendor
+/node_modules
+
+/public/storage
+/public/hot
+/public/build
+
+/storage/*.key
+/storage/logs
+/storage/framework
+/storage/pail
+
+/bootstrap/cache
+
+.phpunit.result.cache
+/.phpunit.cache
+.phpactor.json
+
+# ===============================
+# Docker
+# ===============================
+docker/mysql
+docker/redis
+docker/nginx/logs
+
+# ===============================
+# Laravel Homestead (legacy / optional)
+# ===============================
+Homestead.yaml
+Homestead.json
