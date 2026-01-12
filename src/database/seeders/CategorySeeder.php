@@ -2,21 +2,15 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use App\Models\Category;
-use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-use Database\Seeders\PostSeeder;
-use Database\Seeders\CategorySeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Faker\Factory as Faker;
 
-class DatabaseSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      */
     public function run(): void
     {
@@ -38,14 +32,5 @@ class DatabaseSeeder extends Seeder
 
         // Insert sekaligus dalam batch untuk efisiensi (sudah optimal)
         Category::insert($data);
-
-        // $this->call(PostSeeder::class);
-        // $this->call(CategorySeeder::class);
-        // User::factory(10)->create();
-
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
